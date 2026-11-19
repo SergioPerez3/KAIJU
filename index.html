@@ -150,6 +150,7 @@ canvas.rain{position:absolute;inset:0;width:100%;height:100%;pointer-events:none
 .cats button:hover{border-color:var(--cyan)}
 .cats button.on{background:var(--acc);color:#000;border-color:var(--acc);box-shadow:0 0 24px var(--acc)}
 .menu{display:grid;grid-template-columns:1.35fr 1fr;gap:34px;margin-top:36px;align-items:stretch}
+.menu>*,.resgrid>*,.cgrid>*,.reto .txt>*{min-width:0}
 .feat{position:relative;border:1px solid var(--line);overflow:hidden;aspect-ratio:16/10;background:#000;clip-path:polygon(22px 0,100% 0,100% calc(100% - 22px),calc(100% - 22px) 100%,0 100%,0 22px)}
 .feat .ph{position:absolute;inset:0;transition:opacity .6s}
 .feat .ph img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);transition:transform 6s ease-out}
@@ -330,6 +331,14 @@ footer{border-top:1px solid var(--line);padding:70px 0 30px;overflow:hidden;text
   .chip{font-size:.66rem}
   .reto{height:220vh}
   .reto .txt{gap:16px}
+  .buyrow>div:last-child{width:100%;flex-wrap:wrap}
+  .buyrow #addBtn{flex:1 1 180px;min-width:0;white-space:normal}
+  .lB p{margin-top:20px}
+  .info h3{font-size:1.7rem}
+  .lB h2{font-size:clamp(1.9rem,9vw,2.6rem)}
+  .lA .k{font-size:clamp(4rem,26vw,7rem)}
+  .reto .panel{padding:22px}
+  .reto .panel p{font-size:.92rem}
   .retoImg{display:none}
   .reto ul{display:none}
   .reto .txt>div:last-child{display:none}
